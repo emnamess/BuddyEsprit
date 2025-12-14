@@ -1,9 +1,11 @@
 {
-  "dependencies": {
-    "tailwindcss": "^3.4.19"
-  },
+  "name": "buddy-esprit",
+  "private": true,
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./public/style.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./public/style.css --minify"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
   }
 }
