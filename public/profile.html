@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur - Gamification</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+    <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+            <img src="logo.png" alt="Logo" class="h-12 w-auto object-contain">
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="flex items-center space-x-2">
+            <a href="index.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </a>
+            <a href="missions.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
+                <i class="fas fa-bullseye"></i>
+                <span>Missions</span>
+            </a>
+            <a href="profile.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+            <a href="badges.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
+                <i class="fas fa-trophy"></i>
+                <span>Badges</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+        <!-- Profile Section -->
+        <div class="flex items-start space-x-8 mb-12">
+            <!-- Avatar -->
+            <div class="relative">
+                <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-green shadow-lg">
+                    <img src="profile-image.jpg" alt="Emma" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- User Info -->
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold text-violet mb-2">Emna</h1>
+                <p class="text-xl text-gray-700 mb-4">Keep moving Forward !</p>
+                <button class="px-6 py-2 bg-orange text-white rounded-lg hover:opacity-90 transition font-semibold text-sm">
+                    Modifier profil
+                </button>
+            </div>
+        </div>
+
+        <!-- XP & Level Section -->
+        <div class="bg-white rounded-2xl p-8 shadow-md border border-gray-100 mb-12">
+            <h2 class="text-xl font-bold text-gray-800 mb-6">XP & level</h2>
+            <div class="flex items-center space-x-8">
+                <!-- Level Circle -->
+                <div class="w-32 h-32 bg-orange rounded-full flex items-center justify-center shadow-lg">
+                    <span class="text-6xl font-bold text-white">8</span>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="flex-1">
+                    <div class="relative">
+                        <div class="w-full h-8 bg-gray-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-violet via-green to-green rounded-full" style="width: 37%"></div>
+                        </div>
+                        <div class="absolute right-0 top-0 bg-white border-2 border-green rounded-full px-3 py-1 text-sm font-semibold text-green -mt-1">
+                            37%
+                        </div>
+                    </div>
+                    <p class="text-center text-gray-600 font-semibold mt-3">185/500 XP</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Badges Section -->
+        <div>
+            <h2 class="text-xl font-bold text-gray-800 mb-6">Recent Badges :</h2>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+                <!-- Badge 1: Goal Getter -->
+                <div class="bg-green/10 rounded-2xl p-4 text-center">
+                    <div class="w-16 h-16 bg-green rounded-full mx-auto mb-3 flex items-center justify-center">
+                        <i class="fas fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Goal Getter</h3>
+                    <p class="text-xs text-gray-500">5 goals completed</p>
+                </div>
+
+                <!-- Badge 2: Champion -->
+                <div class="bg-violet/10 rounded-2xl p-4 text-center">
+                    <div class="w-16 h-16 bg-violet rounded-full mx-auto mb-3 flex items-center justify-center">
+                        <i class="fas fa-trophy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Champion</h3>
+                    <p class="text-xs text-gray-500">Top 10 this week</p>
+                </div>
+
+                <!-- Badge 3: Achiever -->
+                <div class="bg-violet/10 rounded-2xl p-4 text-center">
+                    <div class="w-16 h-16 bg-violet rounded-full mx-auto mb-3 flex items-center justify-center">
+                        <i class="fas fa-medal text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Achiever</h3>
+                    <p class="text-xs text-gray-500">100 XP earned</p>
+                </div>
+
+                <!-- Badge 4: Hot Streak -->
+                <div class="bg-orange/10 rounded-2xl p-4 text-center">
+                    <div class="w-16 h-16 bg-orange rounded-full mx-auto mb-3 flex items-center justify-center">
+                        <i class="fas fa-fire text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Hot Streak</h3>
+                    <p class="text-xs text-gray-500">7 days in a row</p>
+                </div>
+
+                <!-- Badge 5: Rising Star -->
+                <div class="bg-orange/10 rounded-2xl p-4 text-center">
+                    <div class="w-16 h-16 bg-orange rounded-full mx-auto mb-3 flex items-center justify-center">
+                        <i class="fas fa-star text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Rising Star</h3>
+                    <p class="text-xs text-gray-500">Level up 3 times</p>
+                </div>
+
+                <!-- Badge 6: Speed Demon -->
+                <div class="bg-red/10 rounded-2xl p-4 text-center">
+                    <div class="w-16 h-16 bg-red rounded-full mx-auto mb-3 flex items-center justify-center">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-800 mb-1">Speed Demon</h3>
+                    <p class="text-xs text-gray-500">Fast learner</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold mb-4">Design Column</h4>
+                    <p class="text-sm text-gray-400 mb-2">Fonctionnalite</p>
+                    <p class="text-sm text-gray-400">A'propos/Forum</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Pages</h4>
+                    <p class="text-sm text-gray-400 mb-2">Accueil</p>
+                    <p class="text-sm text-gray-400 mb-2">Forum</p>
+                    <p class="text-sm text-gray-400">Docs</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Design Column</h4>
+                    <p class="text-sm text-gray-400 mb-2">Portfolio</p>
+                    <p class="text-sm text-gray-400 mb-2">Agency</p>
+                    <p class="text-sm text-gray-400">Webflix</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex justify-between items-center text-sm text-gray-400">
+                <p>© 2025 Webflow Éducation Services. Tous droits réservés</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white">Confidentialité</a>
+                    <a href="#" class="hover:text-white">Conditions</a>
+                    <a href="#" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
