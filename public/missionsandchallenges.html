@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Missions and challenges</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="font-sans bg-gray-50">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-gray-50">
     <!-- Header -->
    <header class="bg-white shadow-sm">
     <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center space-x-3">
-            <img src="logo.png" alt="Logo" class="h-12 w-auto object-contain">
+          <img src="logo.png" alt="Logo" class="h-12 w-auto object-contain" />
         </div>
-        
+
         <!-- Navigation Links -->
         <div class="flex items-center space-x-2">
             <a href="index.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
@@ -50,8 +56,8 @@
                 <span>Create Challenge</span>
             </a>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-8 max-w-6xl">
@@ -72,209 +78,293 @@
 
             </div>
         </div>
+      </div>
 
-        <!-- Tabs -->
-        <div class="flex space-x-8 mb-8 border-b border-gray-200">
-            <button class="px-4 py-3 text-violet font-semibold border-b-2 border-violet">
-                Daily
-            </button>
-            <button class="px-4 py-3 text-gray-500 font-semibold hover:text-gray-700">
-                Weekly
-            </button>
-            <button class="px-4 py-3 text-gray-500 font-semibold hover:text-gray-700">
-                Community
-            </button>
+      <!-- Tabs -->
+      <div class="flex space-x-8 mb-8 border-b border-gray-200">
+        <button
+          class="px-4 py-3 text-violet font-semibold border-b-2 border-violet"
+        >
+          Daily
+        </button>
+        <button
+          class="px-4 py-3 text-gray-500 font-semibold hover:text-gray-700"
+        >
+          Weekly
+        </button>
+        <button
+          class="px-4 py-3 text-gray-500 font-semibold hover:text-gray-700"
+        >
+          Community
+        </button>
+      </div>
+
+      <!-- Active Missions Section -->
+      <div class="mb-12">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl font-bold text-gray-900">Active Missions :</h2>
+          <a
+            href="#"
+            class="text-sm text-gray-600 hover:text-gray-900 flex items-center space-x-1"
+          >
+            <span>See All</span>
+            <i class="fas fa-chevron-right text-xs"></i>
+          </a>
         </div>
 
-        <!-- Active Missions Section -->
-        <div class="mb-12">
-            <div class="flex items-center justify-between mb-6">
-                <h2 class="text-xl font-bold text-gray-900">Active Missions :</h2>
-                <a href="#" class="text-sm text-gray-600 hover:text-gray-900 flex items-center space-x-1">
-                    <span>See All</span>
-                    <i class="fas fa-chevron-right text-xs"></i>
-                </a>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Mission Card 1 -->
+          <div
+            class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-star text-violet text-xs"></i>
+                  <span class="text-violet text-xs font-semibold">10 xp</span>
+                </div>
+                <div
+                  class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-coins text-orange text-xs"></i>
+                  <span class="text-orange text-xs font-semibold">50 $</span>
+                </div>
+              </div>
             </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Mission Card 1 -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-2">
-                            <div class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-star text-violet text-xs"></i>
-                                <span class="text-violet text-xs font-semibold">10 xp</span>
-                            </div>
-                            <div class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-coins text-orange text-xs"></i>
-                                <span class="text-orange text-xs font-semibold">50 $</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-4">Deliver launch to Emna (G 412)</h3>
-                    <div class="relative">
-                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                            <div class="h-full bg-orange rounded-full" style="width: 45%"></div>
-                        </div>
-                        <p class="text-right text-sm font-semibold text-orange mt-2">45%</p>
-                    </div>
-                </div>
-
-                <!-- Mission Card 2 -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-2">
-                            <div class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-star text-violet text-xs"></i>
-                                <span class="text-violet text-xs font-semibold">10 xp</span>
-                            </div>
-                            <div class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-coins text-orange text-xs"></i>
-                                <span class="text-orange text-xs font-semibold">50 $</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-4">Deliver water to taha (LJK)</h3>
-                    <div class="relative">
-                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                            <div class="h-full bg-orange rounded-full" style="width: 30%"></div>
-                        </div>
-                        <p class="text-right text-sm font-semibold text-orange mt-2">30%</p>
-                    </div>
-                </div>
-
-                <!-- Mission Card 3 -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-2">
-                            <div class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-star text-violet text-xs"></i>
-                                <span class="text-violet text-xs font-semibold">10 xp</span>
-                            </div>
-                            <div class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-coins text-orange text-xs"></i>
-                                <span class="text-orange text-xs font-semibold">50 $</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-4">Complete Chapter 3 (angular)</h3>
-                    <div class="relative">
-                        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                            <div class="h-full bg-green rounded-full" style="width: 75%"></div>
-                        </div>
-                        <p class="text-right text-sm font-semibold text-green mt-2">75%</p>
-                    </div>
-                </div>
+            <h3 class="text-base font-bold text-gray-900 mb-4">
+              Deliver launch to Emna (G 412)
+            </h3>
+            <div class="relative">
+              <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-orange rounded-full"
+                  style="width: 45%"
+                ></div>
+              </div>
+              <p class="text-right text-sm font-semibold text-orange mt-2">
+                45%
+              </p>
             </div>
+          </div>
+
+          <!-- Mission Card 2 -->
+          <div
+            class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-star text-violet text-xs"></i>
+                  <span class="text-violet text-xs font-semibold">10 xp</span>
+                </div>
+                <div
+                  class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-coins text-orange text-xs"></i>
+                  <span class="text-orange text-xs font-semibold">50 $</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-gray-900 mb-4">
+              Deliver water to taha (LJK)
+            </h3>
+            <div class="relative">
+              <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-orange rounded-full"
+                  style="width: 30%"
+                ></div>
+              </div>
+              <p class="text-right text-sm font-semibold text-orange mt-2">
+                30%
+              </p>
+            </div>
+          </div>
+
+          <!-- Mission Card 3 -->
+          <div
+            class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-star text-violet text-xs"></i>
+                  <span class="text-violet text-xs font-semibold">10 xp</span>
+                </div>
+                <div
+                  class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-coins text-orange text-xs"></i>
+                  <span class="text-orange text-xs font-semibold">50 $</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-gray-900 mb-4">
+              Complete Chapter 3 (angular)
+            </h3>
+            <div class="relative">
+              <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-green rounded-full"
+                  style="width: 75%"
+                ></div>
+              </div>
+              <p class="text-right text-sm font-semibold text-green mt-2">
+                75%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Suggested Missions Section -->
+      <div>
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-xl font-bold text-gray-900">Suggested missions :</h2>
+          <a
+            href="#"
+            class="text-sm text-gray-600 hover:text-gray-900 flex items-center space-x-1"
+          >
+            <span>See All</span>
+            <i class="fas fa-chevron-right text-xs"></i>
+          </a>
         </div>
 
-        <!-- Suggested Missions Section -->
-        <div>
-            <div class="flex items-center justify-between mb-6">
-                <h2 class="text-xl font-bold text-gray-900">Suggested missions :</h2>
-                <a href="#" class="text-sm text-gray-600 hover:text-gray-900 flex items-center space-x-1">
-                    <span>See All</span>
-                    <i class="fas fa-chevron-right text-xs"></i>
-                </a>
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Suggested Mission Card 1 -->
+          <div
+            class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-star text-violet text-xs"></i>
+                  <span class="text-violet text-xs font-semibold">10 xp</span>
+                </div>
+                <div
+                  class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-coins text-orange text-xs"></i>
+                  <span class="text-orange text-xs font-semibold">50 $</span>
+                </div>
+              </div>
             </div>
+            <h3 class="text-base font-bold text-gray-900 mb-4">
+              Deliver launch to Emna (G 412)
+            </h3>
+            <div class="w-full h-2 bg-gray-200 rounded-full"></div>
+          </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Suggested Mission Card 1 -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-2">
-                            <div class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-star text-violet text-xs"></i>
-                                <span class="text-violet text-xs font-semibold">10 xp</span>
-                            </div>
-                            <div class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-coins text-orange text-xs"></i>
-                                <span class="text-orange text-xs font-semibold">50 $</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-4">Deliver launch to Emna (G 412)</h3>
-                    <div class="w-full h-2 bg-gray-200 rounded-full"></div>
+          <!-- Suggested Mission Card 2 -->
+          <div
+            class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-star text-violet text-xs"></i>
+                  <span class="text-violet text-xs font-semibold">10 xp</span>
                 </div>
-
-                <!-- Suggested Mission Card 2 -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-2">
-                            <div class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-star text-violet text-xs"></i>
-                                <span class="text-violet text-xs font-semibold">10 xp</span>
-                            </div>
-                            <div class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-coins text-orange text-xs"></i>
-                                <span class="text-orange text-xs font-semibold">50 $</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-4">Deliver launch to Emna (G 412)</h3>
-                    <div class="w-full h-2 bg-gray-200 rounded-full"></div>
+                <div
+                  class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-coins text-orange text-xs"></i>
+                  <span class="text-orange text-xs font-semibold">50 $</span>
                 </div>
-
-                <!-- Suggested Mission Card 3 -->
-                <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center space-x-2">
-                            <div class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-star text-violet text-xs"></i>
-                                <span class="text-violet text-xs font-semibold">10 xp</span>
-                            </div>
-                            <div class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full">
-                                <i class="fas fa-coins text-orange text-xs"></i>
-                                <span class="text-orange text-xs font-semibold">50 $</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-base font-bold text-gray-900 mb-4">Deliver launch to Emna (G 412)</h3>
-                    <div class="w-full h-2 bg-gray-200 rounded-full"></div>
-                </div>
+              </div>
             </div>
+            <h3 class="text-base font-bold text-gray-900 mb-4">
+              Deliver launch to Emna (G 412)
+            </h3>
+            <div class="w-full h-2 bg-gray-200 rounded-full"></div>
+          </div>
+
+          <!-- Suggested Mission Card 3 -->
+          <div
+            class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-lg transition"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="flex items-center space-x-1 bg-violet/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-star text-violet text-xs"></i>
+                  <span class="text-violet text-xs font-semibold">10 xp</span>
+                </div>
+                <div
+                  class="flex items-center space-x-1 bg-orange/10 px-3 py-1 rounded-full"
+                >
+                  <i class="fas fa-coins text-orange text-xs"></i>
+                  <span class="text-orange text-xs font-semibold">50 $</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-gray-900 mb-4">
+              Deliver launch to Emna (G 412)
+            </h3>
+            <div class="w-full h-2 bg-gray-200 rounded-full"></div>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h4 class="font-bold mb-4">Design Column</h4>
-                    <p class="text-sm text-gray-400 mb-2">Fonctionnalite</p>
-                    <p class="text-sm text-gray-400">A'propos/Forum</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Pages</h4>
-                    <p class="text-sm text-gray-400 mb-2">Accueil</p>
-                    <p class="text-sm text-gray-400 mb-2">Forum</p>
-                    <p class="text-sm text-gray-400">Docs</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Design Column</h4>
-                    <p class="text-sm text-gray-400 mb-2">Portfolio</p>
-                    <p class="text-sm text-gray-400 mb-2">Agency</p>
-                    <p class="text-sm text-gray-400">Webflix</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Suivez-nous</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="font-bold mb-4">Design Column</h4>
+            <p class="text-sm text-gray-400 mb-2">Fonctionnalite</p>
+            <p class="text-sm text-gray-400">A'propos/Forum</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Pages</h4>
+            <p class="text-sm text-gray-400 mb-2">Accueil</p>
+            <p class="text-sm text-gray-400 mb-2">Forum</p>
+            <p class="text-sm text-gray-400">Docs</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Design Column</h4>
+            <p class="text-sm text-gray-400 mb-2">Portfolio</p>
+            <p class="text-sm text-gray-400 mb-2">Agency</p>
+            <p class="text-sm text-gray-400">Webflix</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Suivez-nous</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 flex justify-between items-center text-sm text-gray-400">
-                <p>© 2025 Webflow Éducation Services. Tous droits réservés</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-white">Confidentialité</a>
-                    <a href="#" class="hover:text-white">Conditions</a>
-                    <a href="#" class="hover:text-white">Sitemap</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex justify-between items-center text-sm text-gray-400"
+        >
+          <p>© 2025 Webflow Éducation Services. Tous droits réservés</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white">Confidentialité</a>
+            <a href="#" class="hover:text-white">Conditions</a>
+            <a href="#" class="hover:text-white">Sitemap</a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
