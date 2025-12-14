@@ -1,219 +1,315 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Badges et Progression</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="font-sans bg-gray-50">
-    
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-gray-50">
     <!-- Header -->
-<header class="bg-white shadow-sm">
-    <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+    <header class="bg-white shadow-sm">
+      <nav
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
         <!-- Logo -->
         <div class="flex items-center space-x-3">
-            <img src="logo.png" alt="Logo" class="h-12 w-auto object-contain">
+          <img src="logo.png" alt="Logo" class="h-12 w-auto object-contain" />
         </div>
-        
+
         <!-- Navigation Links -->
         <div class="flex items-center space-x-2">
-            <a href="index.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
-                <i class="fas fa-home"></i>
-                <span>Accueil</span>
-            </a>
-            <a href="missionsandchallenges.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
-                <i class="fas fa-bullseye"></i>
-                <span>Missions</span>
-            </a>
-            <a href="profile.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
-                <i class="fas fa-user"></i>
-                <span>Profile</span>
-            </a>
-            <a href="badges.html" class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium">
-                <i class="fas fa-trophy"></i>
-                <span>Badges</span>
-            </a>
+          <a
+            href="index.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
+            <i class="fas fa-home"></i>
+            <span>Accueil</span>
+          </a>
+          <a
+            href="missionsandchallenges.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
+            <i class="fas fa-bullseye"></i>
+            <span>Missions</span>
+          </a>
+          <a
+            href="profile.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+          </a>
+          <a
+            href="badges.html"
+            class="px-5 py-2.5 text-violet bg-violet/10 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
+            <i class="fas fa-trophy"></i>
+            <span>Badges</span>
+          </a>
+          <a
+            href="calendar.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
+            <i class="fas fa-calendar"></i>
+            <span>Calendar</span>
+          </a>
+          <a
+            href="shop.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
+            <i class="fas fa-shopping-cart"></i>
+            <span>Shop</span>
+          </a>
+          <a
+            href="CreateChallenge.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
+            <i class="fas fa-plus-circle"></i>
+            <span>Create Challenge</span>
+          </a>
         </div>
-    </nav>
-</header>
-
+      </nav>
+    </header>
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-8 max-w-5xl">
-        <!-- Level Progress Card -->
-        <div class="bg-white rounded-2xl p-8 shadow-md mb-8">
-            <div class="flex items-center justify-between">
-                <!-- Left: Level Circle -->
-                <div class="flex items-center space-x-6">
-                    <div class="w-28 h-28 border-4 border-violet rounded-full flex items-center justify-center">
-                        <span class="text-5xl font-bold text-violet">9</span>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-gray-800 mb-1">Level 5: Speedy Novice</h2>
-                        <p class="text-sm text-gray-600 mb-3">XP: 850/1200</p>
-                        <div class="w-64 h-3 bg-gray-200 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-violet to-green rounded-full" style="width: 71%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Daily Streak -->
-                <div class="text-right">
-                    <p class="text-sm font-semibold text-gray-600 mb-2">Daily streak</p>
-                    <div class="inline-flex items-center space-x-2 bg-green text-white px-4 py-2 rounded-lg">
-                        <i class="fas fa-fire text-orange text-xl"></i>
-                        <span class="font-bold">7 days streak</span>
-                        <i class="fas fa-arrow-up text-sm"></i>
-                    </div>
-                </div>
+      <!-- Level Progress Card -->
+      <div class="bg-white rounded-2xl p-8 shadow-md mb-8">
+        <div class="flex items-center justify-between">
+          <!-- Left: Level Circle -->
+          <div class="flex items-center space-x-6">
+            <div
+              class="w-28 h-28 border-4 border-violet rounded-full flex items-center justify-center"
+            >
+              <span class="text-5xl font-bold text-violet">9</span>
             </div>
+            <div>
+              <h2 class="text-2xl font-bold text-gray-800 mb-1">
+                Level 5: Speedy Novice
+              </h2>
+              <p class="text-sm text-gray-600 mb-3">XP: 850/1200</p>
+              <div class="w-64 h-3 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-gradient-to-r from-violet to-green rounded-full"
+                  style="width: 71%"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Daily Streak -->
+          <div class="text-right">
+            <p class="text-sm font-semibold text-gray-600 mb-2">Daily streak</p>
+            <div
+              class="inline-flex items-center space-x-2 bg-green text-white px-4 py-2 rounded-lg"
+            >
+              <i class="fas fa-fire text-orange text-xl"></i>
+              <span class="font-bold">7 days streak</span>
+              <i class="fas fa-arrow-up text-sm"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Badges Section -->
+      <div class="bg-white rounded-2xl p-8 shadow-md">
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-6">
+          <div>
+            <h3 class="text-lg font-bold text-gray-800">
+              Next Badge: <span class="text-violet">Fast Delivery</span>
+            </h3>
+            <p class="text-sm text-gray-600">
+              Badges Earned: <span class="text-green font-semibold">6/150</span>
+            </p>
+          </div>
+          <button
+            class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-sm font-medium flex items-center space-x-2"
+          >
+            <span>Filter</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </button>
         </div>
 
-        <!-- Badges Section -->
-        <div class="bg-white rounded-2xl p-8 shadow-md">
-            <!-- Header -->
-            <div class="flex items-center justify-between mb-6">
-                <div>
-                    <h3 class="text-lg font-bold text-gray-800">
-                        Next Badge: <span class="text-violet">Fast Delivery</span>
-                    </h3>
-                    <p class="text-sm text-gray-600">
-                        Badges Earned: <span class="text-green font-semibold">6/150</span>
-                    </p>
-                </div>
-                <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-sm font-medium flex items-center space-x-2">
-                    <span>Filter</span>
-                    <i class="fas fa-chevron-down text-xs"></i>
-                </button>
+        <!-- Badges Grid -->
+        <div class="grid grid-cols-4 gap-4">
+          <!-- Badge 1: First Step - Unlocked -->
+          <div
+            class="bg-gradient-to-br from-green/10 to-green/5 rounded-2xl p-6 text-center border border-green/20 hover:shadow-lg transition"
+          >
+            <div class="relative inline-block mb-3">
+              <div
+                class="w-20 h-20 bg-green rounded-2xl flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-medal text-white text-3xl"></i>
+              </div>
+              <div
+                class="absolute -top-1 -right-1 w-6 h-6 bg-green rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-check text-white text-xs"></i>
+              </div>
             </div>
+            <p class="text-sm font-bold text-gray-800">First Step</p>
+          </div>
 
-            <!-- Badges Grid -->
-            <div class="grid grid-cols-4 gap-4">
-                <!-- Badge 1: First Step - Unlocked -->
-                <div class="bg-gradient-to-br from-green/10 to-green/5 rounded-2xl p-6 text-center border border-green/20 hover:shadow-lg transition">
-                    <div class="relative inline-block mb-3">
-                        <div class="w-20 h-20 bg-green rounded-2xl flex items-center justify-center mx-auto">
-                            <i class="fas fa-medal text-white text-3xl"></i>
-                        </div>
-                        <div class="absolute -top-1 -right-1 w-6 h-6 bg-green rounded-full flex items-center justify-center">
-                            <i class="fas fa-check text-white text-xs"></i>
-                        </div>
-                    </div>
-                    <p class="text-sm font-bold text-gray-800">First Step</p>
-                </div>
-
-                <!-- Badge 2: First Delivery - Unlocked -->
-                <div class="bg-gradient-to-br from-orange/10 to-orange/5 rounded-2xl p-6 text-center border border-orange/20 hover:shadow-lg transition">
-                    <div class="relative inline-block mb-3">
-                        <div class="w-20 h-20 bg-orange rounded-2xl flex items-center justify-center mx-auto">
-                            <i class="fas fa-trophy text-white text-3xl"></i>
-                        </div>
-                        <div class="absolute -top-1 -right-1 w-6 h-6 bg-green rounded-full flex items-center justify-center">
-                            <i class="fas fa-check text-white text-xs"></i>
-                        </div>
-                    </div>
-                    <p class="text-sm font-bold text-gray-800">First Delivery</p>
-                </div>
-
-                <!-- Badge 3: Team Player - Unlocked -->
-                <div class="bg-gradient-to-br from-violet/10 to-violet/5 rounded-2xl p-6 text-center border border-violet/20 hover:shadow-lg transition">
-                    <div class="relative inline-block mb-3">
-                        <div class="w-20 h-20 bg-violet rounded-2xl flex items-center justify-center mx-auto">
-                            <i class="fas fa-star text-white text-3xl"></i>
-                        </div>
-                        <div class="absolute -top-1 -right-1 w-6 h-6 bg-green rounded-full flex items-center justify-center">
-                            <i class="fas fa-check text-white text-xs"></i>
-                        </div>
-                    </div>
-                    <p class="text-sm font-bold text-gray-800">Team Player</p>
-                </div>
-
-                <!-- Badge 4: Locked -->
-                <div class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200">
-                    <div class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                        <i class="fas fa-lock text-gray-500 text-2xl"></i>
-                    </div>
-                    <p class="text-sm font-bold text-gray-500">Locked</p>
-                </div>
-
-                <!-- Badge 5: Locked -->
-                <div class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200">
-                    <div class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                        <i class="fas fa-lock text-gray-500 text-2xl"></i>
-                    </div>
-                    <p class="text-sm font-bold text-gray-500">Locked</p>
-                </div>
-
-                <!-- Badge 6: Locked -->
-                <div class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200">
-                    <div class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                        <i class="fas fa-lock text-gray-500 text-2xl"></i>
-                    </div>
-                    <p class="text-sm font-bold text-gray-500">Locked</p>
-                </div>
-
-                <!-- Badge 7: Locked -->
-                <div class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200">
-                    <div class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                        <i class="fas fa-lock text-gray-500 text-2xl"></i>
-                    </div>
-                    <p class="text-sm font-bold text-gray-500">Locked</p>
-                </div>
-
-                <!-- Badge 8: Locked -->
-                <div class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200">
-                    <div class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                        <i class="fas fa-lock text-gray-500 text-2xl"></i>
-                    </div>
-                    <p class="text-sm font-bold text-gray-500">Locked</p>
-                </div>
+          <!-- Badge 2: First Delivery - Unlocked -->
+          <div
+            class="bg-gradient-to-br from-orange/10 to-orange/5 rounded-2xl p-6 text-center border border-orange/20 hover:shadow-lg transition"
+          >
+            <div class="relative inline-block mb-3">
+              <div
+                class="w-20 h-20 bg-orange rounded-2xl flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-trophy text-white text-3xl"></i>
+              </div>
+              <div
+                class="absolute -top-1 -right-1 w-6 h-6 bg-green rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-check text-white text-xs"></i>
+              </div>
             </div>
+            <p class="text-sm font-bold text-gray-800">First Delivery</p>
+          </div>
+
+          <!-- Badge 3: Team Player - Unlocked -->
+          <div
+            class="bg-gradient-to-br from-violet/10 to-violet/5 rounded-2xl p-6 text-center border border-violet/20 hover:shadow-lg transition"
+          >
+            <div class="relative inline-block mb-3">
+              <div
+                class="w-20 h-20 bg-violet rounded-2xl flex items-center justify-center mx-auto"
+              >
+                <i class="fas fa-star text-white text-3xl"></i>
+              </div>
+              <div
+                class="absolute -top-1 -right-1 w-6 h-6 bg-green rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-check text-white text-xs"></i>
+              </div>
+            </div>
+            <p class="text-sm font-bold text-gray-800">Team Player</p>
+          </div>
+
+          <!-- Badge 4: Locked -->
+          <div
+            class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <div
+              class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3"
+            >
+              <i class="fas fa-lock text-gray-500 text-2xl"></i>
+            </div>
+            <p class="text-sm font-bold text-gray-500">Locked</p>
+          </div>
+
+          <!-- Badge 5: Locked -->
+          <div
+            class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <div
+              class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3"
+            >
+              <i class="fas fa-lock text-gray-500 text-2xl"></i>
+            </div>
+            <p class="text-sm font-bold text-gray-500">Locked</p>
+          </div>
+
+          <!-- Badge 6: Locked -->
+          <div
+            class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <div
+              class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3"
+            >
+              <i class="fas fa-lock text-gray-500 text-2xl"></i>
+            </div>
+            <p class="text-sm font-bold text-gray-500">Locked</p>
+          </div>
+
+          <!-- Badge 7: Locked -->
+          <div
+            class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <div
+              class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3"
+            >
+              <i class="fas fa-lock text-gray-500 text-2xl"></i>
+            </div>
+            <p class="text-sm font-bold text-gray-500">Locked</p>
+          </div>
+
+          <!-- Badge 8: Locked -->
+          <div
+            class="bg-gray-100 rounded-2xl p-6 text-center border border-gray-200"
+          >
+            <div
+              class="w-20 h-20 bg-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-3"
+            >
+              <i class="fas fa-lock text-gray-500 text-2xl"></i>
+            </div>
+            <p class="text-sm font-bold text-gray-500">Locked</p>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h4 class="font-bold mb-4">Design Column</h4>
-                    <p class="text-sm text-gray-400 mb-2">Fonctionnalite</p>
-                    <p class="text-sm text-gray-400">A'propos/Forum</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Pages</h4>
-                    <p class="text-sm text-gray-400 mb-2">Accueil</p>
-                    <p class="text-sm text-gray-400 mb-2">Forum</p>
-                    <p class="text-sm text-gray-400">Docs</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Design Column</h4>
-                    <p class="text-sm text-gray-400 mb-2">Portfolio</p>
-                    <p class="text-sm text-gray-400 mb-2">Agency</p>
-                    <p class="text-sm text-gray-400">Webflix</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Suivez-nous</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="font-bold mb-4">Design Column</h4>
+            <p class="text-sm text-gray-400 mb-2">Fonctionnalite</p>
+            <p class="text-sm text-gray-400">A'propos/Forum</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Pages</h4>
+            <p class="text-sm text-gray-400 mb-2">Accueil</p>
+            <p class="text-sm text-gray-400 mb-2">Forum</p>
+            <p class="text-sm text-gray-400">Docs</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Design Column</h4>
+            <p class="text-sm text-gray-400 mb-2">Portfolio</p>
+            <p class="text-sm text-gray-400 mb-2">Agency</p>
+            <p class="text-sm text-gray-400">Webflix</p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Suivez-nous</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 flex justify-between items-center text-sm text-gray-400">
-                <p>© 2025 Webflow Éducation Services. Tous droits réservés</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-white">Confidentialité</a>
-                    <a href="#" class="hover:text-white">Conditions</a>
-                    <a href="#" class="hover:text-white">Sitemap</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex justify-between items-center text-sm text-gray-400"
+        >
+          <p>© 2025 Webflow Éducation Services. Tous droits réservés</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white">Confidentialité</a>
+            <a href="#" class="hover:text-white">Conditions</a>
+            <a href="#" class="hover:text-white">Sitemap</a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

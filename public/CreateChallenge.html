@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create a New Challenge</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,315 +15,66 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: #f9fafb;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      /* Header */
-      header {
-        background-color: white;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      }
-
-      nav {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 1rem 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .logo-container {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-
-      .logo-container img {
-        height: 3rem;
-        width: auto;
-        object-fit: contain;
-      }
-
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .nav-links a {
-        padding: 0.625rem 1.25rem;
-        color: #374151;
-        text-decoration: none;
-        border-radius: 0.5rem;
-        transition: all 0.3s;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-weight: 500;
-        font-size: 0.95rem;
-      }
-
-      .nav-links a:hover {
-        color: #7c4dff;
-        background-color: rgba(124, 77, 255, 0.05);
-      }
-
-      .nav-links a.active {
-        color: #7c4dff;
-        background-color: rgba(124, 77, 255, 0.1);
-      }
-
-      /* Main Content */
-      main {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-      }
-
-      .form-container {
-        background: linear-gradient(135deg, #e9d5ff 0%, #ddd6fe 100%);
-        border-radius: 2rem;
-        padding: 3rem;
-        max-width: 700px;
-        width: 100%;
-        box-shadow: 0 10px 40px rgba(124, 77, 255, 0.15);
-      }
-
-      .form-title {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #111827;
-        margin-bottom: 0.5rem;
-      }
-
-      .form-subtitle {
-        font-size: 0.875rem;
-        color: #6b7280;
-        margin-bottom: 2rem;
-      }
-
-      .form-group {
-        margin-bottom: 1.5rem;
-      }
-
-      .form-label {
-        display: block;
-        font-size: 0.875rem;
-        font-weight: 500;
-        color: #374151;
-        margin-bottom: 0.5rem;
-      }
-
-      .form-input,
-      .form-textarea,
-      .form-select {
-        width: 100%;
-        padding: 0.875rem 1rem;
-        border: 2px solid transparent;
-        border-radius: 0.75rem;
-        font-family: "Poppins", sans-serif;
-        font-size: 0.875rem;
-        background-color: white;
-        transition: all 0.3s;
-      }
-
-      .form-input:focus,
-      .form-textarea:focus,
-      .form-select:focus {
-        outline: none;
-        border-color: #7c4dff;
-        box-shadow: 0 0 0 3px rgba(124, 77, 255, 0.1);
-      }
-
-      .form-input::placeholder,
-      .form-textarea::placeholder,
-      .form-select {
-        color: #9ca3af;
-      }
-
-      .form-textarea {
-        min-height: 120px;
-        resize: vertical;
-      }
-
-      .form-select {
-        appearance: none;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239CA3AF' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: right 1rem center;
-        padding-right: 2.5rem;
-        cursor: pointer;
-      }
-
-      .form-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-      }
-
-      .form-actions {
-        display: flex;
-        justify-content: flex-end;
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-
-      .btn {
-        padding: 0.75rem 2rem;
-        border-radius: 0.75rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s;
-        border: none;
-        font-size: 1rem;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .btn-cancel {
-        background-color: #ef4444;
-        color: white;
-      }
-
-      .btn-cancel:hover {
-        background-color: #dc2626;
-      }
-
-      .btn-create {
-        background-color: #10b981;
-        color: white;
-      }
-
-      .btn-create:hover {
-        background-color: #059669;
-      }
-
-      /* Footer */
-      footer {
-        background-color: #111827;
-        color: white;
-        padding: 3rem 1rem;
-        margin-top: 4rem;
-      }
-
-      .footer-content {
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-
-      .footer-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        margin-bottom: 2rem;
-      }
-
-      .footer-column h4 {
-        font-weight: 700;
-        margin-bottom: 1rem;
-        font-size: 0.95rem;
-      }
-
-      .footer-column p {
-        font-size: 0.875rem;
-        color: #9ca3af;
-        margin-bottom: 0.5rem;
-      }
-
-      .footer-social {
-        display: flex;
-        gap: 1rem;
-        margin-top: 1rem;
-      }
-
-      .footer-social a {
-        color: #9ca3af;
-        font-size: 1.125rem;
-        transition: color 0.3s;
-      }
-
-      .footer-social a:hover {
-        color: white;
-      }
-
-      .footer-bottom {
-        border-top: 1px solid #374151;
-        padding-top: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.875rem;
-        color: #9ca3af;
-      }
-
-      .footer-links {
-        display: flex;
-        gap: 1rem;
-      }
-
-      .footer-links a {
-        color: #9ca3af;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      .footer-links a:hover {
-        color: white;
-      }
-    </style>
   </head>
-  <body>
+  <body class="font-sans bg-gray-50">
     <!-- Header -->
-    <header>
-      <nav>
+    <header class="bg-white shadow-sm">
+      <nav
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
         <!-- Logo -->
-        <div class="logo-container">
-          <img src="logo.png" alt="Logo" />
+        <div class="flex items-center space-x-3">
+          <img src="logo.png" alt="Logo" class="h-12 w-auto object-contain" />
         </div>
 
         <!-- Navigation Links -->
-        <div class="nav-links">
-          <a href="index.html">
+        <div class="flex items-center space-x-2">
+          <a
+            href="index.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
             <i class="fas fa-home"></i>
             <span>Accueil</span>
           </a>
-          <a href="missionsandchallenges.html">
+          <a
+            href="missionsandchallenges.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
             <i class="fas fa-bullseye"></i>
             <span>Missions</span>
           </a>
-          <a href="profile.html">
+          <a
+            href="profile.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
             <i class="fas fa-user"></i>
             <span>Profile</span>
           </a>
-          <a href="badges.html">
+          <a
+            href="badges.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
             <i class="fas fa-trophy"></i>
             <span>Badges</span>
           </a>
-          <a href="calendar.html">
+          <a
+            href="calendar.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
             <i class="fas fa-calendar"></i>
             <span>Calendar</span>
           </a>
-          <a href="shop.html">
+          <a
+            href="shop.html"
+            class="px-5 py-2.5 text-gray-700 hover:text-violet hover:bg-violet/5 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
             <i class="fas fa-shopping-cart"></i>
             <span>Shop</span>
           </a>
-          <a href="create-challenge.html" class="active">
+          <a
+            href="create-challenge.html"
+            class="px-5 py-2.5 text-violet bg-violet/10 rounded-lg transition flex items-center space-x-2 font-medium"
+          >
             <i class="fas fa-plus-circle"></i>
             <span>Create Challenge</span>
           </a>
@@ -331,43 +83,61 @@
     </header>
 
     <!-- Main Content -->
-    <main>
-      <div class="form-container">
-        <h2 class="form-title">Create a new Challenge :</h2>
-        <p class="form-subtitle">
+    <main class="container mx-auto px-6 py-8 max-w-4xl">
+      <div
+        class="bg-gradient-to-br from-purple-200 to-indigo-200 rounded-3xl p-12 max-w-2xl w-full mx-auto shadow-lg"
+      >
+        <h2 class="text-2xl font-semibold text-gray-900 mb-2">
+          Create a new Challenge :
+        </h2>
+        <p class="text-sm text-gray-600 mb-8">
           Complete this form to design your challenge: add a title, describe the
           task, and choose the rewards for participants.
         </p>
 
         <form>
-          <div class="form-group">
-            <label class="form-label">Title</label>
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Title</label
+            >
             <input
               type="text"
-              class="form-input"
+              class="w-full px-4 py-3.5 border-2 border-transparent rounded-xl font-sans text-sm bg-white transition focus:outline-none focus:border-violet focus:ring-3 focus:ring-violet/10 placeholder-gray-400"
               placeholder="e.g., Deliver lunch to a classmate in need"
             />
           </div>
 
-          <div class="form-group">
+          <div class="mb-6">
             <input
               type="text"
-              class="form-input"
+              class="w-full px-4 py-3.5 border-2 border-transparent rounded-xl font-sans text-sm bg-white transition focus:outline-none focus:border-violet focus:ring-3 focus:ring-violet/10 placeholder-gray-400"
               placeholder="e.g., Deliver lunch to a classmate in need"
             />
           </div>
 
-          <div class="form-group">
-            <label class="form-label">Description</label>
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Description</label
+            >
             <textarea
-              class="form-textarea"
+              class="w-full px-4 py-3.5 border-2 border-transparent rounded-xl font-sans text-sm bg-white transition focus:outline-none focus:border-violet focus:ring-3 focus:ring-violet/10 placeholder-gray-400 resize-vertical min-h-32"
               placeholder="Explain what the challenge is about, who it helps, and what needs to be done."
             ></textarea>
           </div>
 
-          <div class="form-group">
-            <label class="form-label">Challenge Type</label>
-            <select class="form-select">
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Challenge Type</label
+            >
+            <select
+              class="w-full px-4 py-3.5 border-2 border-transparent rounded-xl font-sans text-sm bg-white transition focus:outline-none focus:border-violet focus:ring-3 focus:ring-violet/10 appearance-none cursor-pointer placeholder-gray-400"
+              style="
+                background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%239CA3AF%22 d=%22M6 9L1 4h10z%22/%3E%3C/svg%3E');
+                background-repeat: no-repeat;
+                background-position: right 1rem center;
+                padding-right: 2.5rem;
+              "
+            >
               <option>e.g Transport, delivery, documents etc....</option>
               <option>Transport</option>
               <option>Delivery</option>
@@ -377,17 +147,35 @@
             </select>
           </div>
 
-          <div class="form-group">
-            <label class="form-label">Select the reward</label>
-            <div class="form-row">
-              <select class="form-select">
+          <div class="mb-8">
+            <label class="block text-sm font-medium text-gray-700 mb-2"
+              >Select the reward</label
+            >
+            <div class="grid grid-cols-2 gap-4">
+              <select
+                class="w-full px-4 py-3.5 border-2 border-transparent rounded-xl font-sans text-sm bg-white transition focus:outline-none focus:border-violet focus:ring-3 focus:ring-violet/10 appearance-none cursor-pointer placeholder-gray-400"
+                style="
+                  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%239CA3AF%22 d=%22M6 9L1 4h10z%22/%3E%3C/svg%3E');
+                  background-repeat: no-repeat;
+                  background-position: right 1rem center;
+                  padding-right: 2.5rem;
+                "
+              >
                 <option>Select an option...</option>
                 <option>50 Coins</option>
                 <option>100 Coins</option>
                 <option>150 Coins</option>
                 <option>200 Coins</option>
               </select>
-              <select class="form-select">
+              <select
+                class="w-full px-4 py-3.5 border-2 border-transparent rounded-xl font-sans text-sm bg-white transition focus:outline-none focus:border-violet focus:ring-3 focus:ring-violet/10 appearance-none cursor-pointer placeholder-gray-400"
+                style="
+                  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 12 12%22%3E%3Cpath fill=%22%239CA3AF%22 d=%22M6 9L1 4h10z%22/%3E%3C/svg%3E');
+                  background-repeat: no-repeat;
+                  background-position: right 1rem center;
+                  padding-right: 2.5rem;
+                "
+              >
                 <option>Select an option...</option>
                 <option>Bronze Badge</option>
                 <option>Silver Badge</option>
@@ -397,12 +185,18 @@
             </div>
           </div>
 
-          <div class="form-actions">
-            <button type="button" class="btn btn-cancel">
+          <div class="flex justify-end gap-4 mt-8">
+            <button
+              type="button"
+              class="px-8 py-3 rounded-xl font-semibold cursor-pointer transition flex items-center gap-2 bg-red text-white hover:bg-red/80"
+            >
               <i class="fas fa-times"></i>
               Cancel
             </button>
-            <button type="submit" class="btn btn-create">
+            <button
+              type="submit"
+              class="px-8 py-3 rounded-xl font-semibold cursor-pointer transition flex items-center gap-2 bg-green text-white hover:bg-green/80"
+            >
               <i class="fas fa-check"></i>
               Create
             </button>
@@ -412,41 +206,49 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <div class="footer-grid">
-          <div class="footer-column">
-            <h4>Design Column</h4>
-            <p>Fonctionnalite</p>
-            <p>A'propos/Forum</p>
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h4 class="font-bold mb-4">Design Column</h4>
+            <p class="text-sm text-gray-400 mb-2">Fonctionnalite</p>
+            <p class="text-sm text-gray-400">A'propos/Forum</p>
           </div>
-          <div class="footer-column">
-            <h4>Pages</h4>
-            <p>Accueil</p>
-            <p>Forum</p>
-            <p>Docs</p>
+          <div>
+            <h4 class="font-bold mb-4">Pages</h4>
+            <p class="text-sm text-gray-400 mb-2">Accueil</p>
+            <p class="text-sm text-gray-400 mb-2">Forum</p>
+            <p class="text-sm text-gray-400">Docs</p>
           </div>
-          <div class="footer-column">
-            <h4>Design Column</h4>
-            <p>Portfolio</p>
-            <p>Agency</p>
-            <p>Webflix</p>
+          <div>
+            <h4 class="font-bold mb-4">Design Column</h4>
+            <p class="text-sm text-gray-400 mb-2">Portfolio</p>
+            <p class="text-sm text-gray-400 mb-2">Agency</p>
+            <p class="text-sm text-gray-400">Webflix</p>
           </div>
-          <div class="footer-column">
-            <h4>Suivez-nous</h4>
-            <div class="footer-social">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+          <div>
+            <h4 class="font-bold mb-4">Suivez-nous</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div
+          class="border-t border-gray-800 pt-8 flex justify-between items-center text-sm text-gray-400"
+        >
           <p>© 2025 Webflow Éducation Services. Tous droits réservés</p>
-          <div class="footer-links">
-            <a href="#">Confidentialité</a>
-            <a href="#">Conditions</a>
-            <a href="#">Sitemap</a>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white">Confidentialité</a>
+            <a href="#" class="hover:text-white">Conditions</a>
+            <a href="#" class="hover:text-white">Sitemap</a>
           </div>
         </div>
       </div>
