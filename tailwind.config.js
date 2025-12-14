@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/*"],
+  content: ["./public/**/*.html"], // Si votre HTML est dans public
   theme: {
     extend: {
       colors: {
-        violet: '#7C4DFF', // Violet
-        green: '#66BB6A', // Vert
-        orange: '#FF9800', // Orange
-        red: '#FF5252', // Rouge
-        white: '#FFFFFF', // Blanc
-        black: '#000000', // Noir
+        violet: '#7C4DFF',
+        green: '#66BB6A',
+        orange: '#FF9800',
+        red: '#FF5252',
+        white: '#FFFFFF',
+        black: '#000000',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],

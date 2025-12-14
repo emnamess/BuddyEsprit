@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="logo.png" alt="Logo" class="h-12 w-auto object-contain">
+                <span class="font-bold text-2xl">Logo</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="px-6 py-3 bg-violet text-white rounded-xl hover:opacity-90 transition flex items-center space-x-2">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </button>
+                <button class="px-6 py-3 border border-gray-300 rounded-xl hover:bg-gray-50 transition flex items-center space-x-2">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </button>
+                <button class="px-6 py-3 bg-green text-white rounded-xl hover:opacity-90 transition flex items-center space-x-2">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Connexion</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-violet to-purple-500 py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex-1">
+                    <div class="flex space-x-4 mb-8">
+                        <button class="px-10 py-4 bg-white rounded-3xl text-violet shadow-lg hover:shadow-xl transition flex items-center space-x-3 font-bold text-lg">
+                            <i class="fas fa-rocket text-2xl"></i>
+                            <span>COMMENCER</span>
+                        </button>
+                        <button class="px-10 py-4 bg-transparent text-white rounded-3xl border-2 border-white hover:bg-white hover:text-violet transition flex items-center space-x-3 font-bold text-lg">
+                            <i class="fas fa-play-circle text-2xl"></i>
+                            <span>DÉMO</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <img src="hero.png" alt="Hero illustration" class="w-full max-w-2xl mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center mb-3 text-black">Nos Services</h2>
+            <p class="text-center text-gray-600 text-sm mb-16">Choisissez une option pour continuer</p>
+
+            <!-- Main Service Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-20">
+                <!-- Forum Card -->
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition text-center border border-gray-100">
+                    <div class="w-20 h-20 bg-violet rounded-2xl mx-auto mb-5 flex items-center justify-center">
+                        <i class="fas fa-comments text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-black">Forum</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed mb-8">
+                        Posé une question ou<br>
+                        répondz aux questions<br>
+                        de la<br>
+                        communauté
+                    </p>
+                    <button class="px-8 py-2.5 bg-green text-white rounded-lg hover:opacity-90 transition font-medium text-sm">
+                        Accéder
+                    </button>
+                </div>
+
+                <!-- Documents Card -->
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition text-center border border-gray-100">
+                    <div class="w-20 h-20 bg-violet rounded-2xl mx-auto mb-5 flex items-center justify-center">
+                        <i class="fas fa-book text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-black">Documents</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed mb-8">
+                        (Cours,exercices,res<br>
+                        ume etc...)
+                    </p>
+                    <button class="px-8 py-2.5 bg-green text-white rounded-lg hover:opacity-90 transition font-medium text-sm">
+                        Accéder
+                    </button>
+                </div>
+
+                <!-- Gamification Card -->
+                <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition text-center border border-gray-100">
+                    <div class="w-20 h-20 bg-violet rounded-2xl mx-auto mb-5 flex items-center justify-center">
+                        <i class="fas fa-gamepad text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 text-black">Gamification</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed mb-8">
+                        L'entraîde se fient d'un<br>
+                        jeux
+                    </p>
+                    <button class="px-8 py-2.5 bg-green text-white rounded-lg hover:opacity-90 transition font-medium text-sm">
+                        Accéder
+                    </button>
+                </div>
+            </div>
+
+            <!-- Additional Services with Gray Background -->
+            <div class="bg-gray-100 py-12 px-8 rounded-2xl mb-20">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-violet rounded-xl mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-cube text-white text-2xl"></i>
+                        </div>
+                        <p class="text-base font-bold text-violet mb-1">150+</p>
+                        <p class="text-sm font-medium text-gray-700">Composants</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green rounded-xl mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-download text-white text-2xl"></i>
+                        </div>
+                        <p class="text-base font-bold text-green mb-1">50K+</p>
+                        <p class="text-sm font-medium text-gray-700">Téléchargements</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-orange rounded-xl mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-star text-white text-2xl"></i>
+                        </div>
+                        <p class="text-base font-bold text-orange mb-1">4.9/5</p>
+                        <p class="text-sm font-medium text-gray-700">Note moyenne</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-red rounded-xl mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <p class="text-base font-bold text-red mb-1">98%</p>
+                        <p class="text-sm font-medium text-gray-700">Performance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Text -->
+            <div class="text-center mb-6">
+                <p class="text-base font-bold text-black mb-2">Ce que disent nos utilisateurs</p>
+                <p class="text-sm text-gray-600">Des milliers de designers et de développeurs nous font confiance</p>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                    <div class="flex text-orange mb-4 text-sm">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-6">
+                        "Un design system incroyable! Il me permet de gagner des semaines de développement. Les composants sont vraiment géniaux et m'impressionnent par leur finesse."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-violet rounded-full flex items-center justify-center text-white font-bold mr-3 text-sm">
+                            SM
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm text-black">Sophia Martin</p>
+                            <p class="text-xs text-gray-500">Digital Marketer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                    <div class="flex text-orange mb-4 text-sm">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-6">
+                        "La qualité et la cohérence des composants sont remarquables. C'est devenu mon outil de référence pour me projeter plus vite."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-green rounded-full flex items-center justify-center text-white font-bold mr-3 text-sm">
+                            TD
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm text-black">Thomas Dubois</p>
+                            <p class="text-xs text-gray-500">Webdesigner Freelance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                    <div class="flex text-orange mb-4 text-sm">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                        <i class="fas fa-star ml-1"></i>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed mb-6">
+                        "Traitement et autres jeux-hazelé! Interface moderne, performante, esthétique et documentée claire. Je recommande à 100%!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-orange rounded-full flex items-center justify-center text-white font-bold mr-3 text-sm">
+                            MJ
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm text-black">Marie Jacobs</p>
+                            <p class="text-xs text-gray-500">Chef de Projet Digital</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-bold mb-4">Design Column</h4>
+                    <p class="text-sm text-gray-400 mb-2">Fonctionnalite</p>
+                    <p class="text-sm text-gray-400">A'propos/Forum</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Pages</h4>
+                    <p class="text-sm text-gray-400 mb-2">Accueil</p>
+                    <p class="text-sm text-gray-400 mb-2">Forum</p>
+                    <p class="text-sm text-gray-400">Docs</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Design Column</h4>
+                    <p class="text-sm text-gray-400 mb-2">Portfolio</p>
+                    <p class="text-sm text-gray-400 mb-2">Agency</p>
+                    <p class="text-sm text-gray-400">Webflix</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex justify-between items-center text-sm text-gray-400">
+                <p>© 2025 Webflow Éducation Services. Tous droits réservés</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white">Confidentialité</a>
+                    <a href="#" class="hover:text-white">Conditions</a>
+                    <a href="#" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
