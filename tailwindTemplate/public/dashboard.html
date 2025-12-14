@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - UX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-blue-50 min-h-screen">
+  <!-- Header -->
+<header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <!-- Logo -->
+            <img src="uxLogo.png" alt="UX Logo" class="h-8 w-auto">
+        </div>
+        
+        <div class="flex items-center gap-1">
+            <input type="text" placeholder="Recherche..." class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+        </div>
+        
+        <div class="flex items-center gap-4">
+            <button class="px-4 py-2 text-purple-600 border border-purple-600 rounded-lg hover:bg-purple-50 transition">
+                Accueil
+            </button>
+            <button class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                Profil
+            </button>
+            <!-- Logo de profil à la place du rond gris -->
+            <img src="profile.png" alt="Profil" class="w-10 h-10 rounded-full object-cover">
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 gap-6">
+            <!-- Mes cours -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Mes cours</h2>
+                <div class="bg-gradient-to-br from-purple-200 to-purple-300 rounded-lg p-8 mb-4 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                        <div class="flex justify-center items-center h-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="cours.png" alt="Mes cours" class="w-full h-32 object-contain">
+                    </div>
+                </div>
+                <button class="w-full py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-semibold">
+                    + Ajouter
+                </button>
+            </div>
+
+            <!-- Quiz -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Quiz</h2>
+                <div class="bg-gradient-to-br from-yellow-300 to-orange-400 rounded-lg p-8 mb-4 flex items-center justify-center">
+                    <img src="quiz.png" alt="Quiz" class="w-32 h-32 object-contain">
+                </div>
+                <div class="space-y-2 text-sm">
+                    <!-- Ligne 1 : accessible -->
+                    <div class="flex justify-between items-center bg-gray-50 p-2 rounded">
+                        <span class="font-medium text-gray-700">Angular</span>
+                        <span class="text-gray-600">15/12/2025</span>
+                        <a href="quiz.html">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 class="w-6 h-6 text-purple-600 cursor-pointer hover:text-purple-800 transition"
+                                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7
+                                         -1.274 4.057-5.065 7-9.542 7
+                                         -4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Ligne 2 : verrouillée rouge -->
+                    <div class="flex justify-between items-center bg-gray-50 p-2 rounded">
+                        <span class="font-medium text-gray-700">Spring</span>
+                        <span class="text-gray-600">16/12/2025</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="w-6 h-6 text-red-600"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 11c1.657 0 3 1.343 3 3v2a3 3 0 01-6 0v-2c0-1.657 1.343-3 3-3z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M8 11V7a4 4 0 118 0v4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progression -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Progression</h2>
+                <div class="bg-gradient-to-br from-blue-300 to-blue-500 rounded-lg p-8 mb-4 flex items-center justify-center">
+                    <img src="progression.png" alt="Progression" class="w-32 h-32 object-contain">
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex-1 h-6 bg-gray-200 rounded-full overflow-hidden">
+                        <div class="h-full bg-gradient-to-r from-blue-400 to-blue-600 rounded-full" style="width: 40%"></div>
+                    </div>
+                    <span class="text-lg font-bold text-gray-700">40%</span>
+                </div>
+            </div>
+
+            <!-- Réunion -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Réunion</h2>
+                <div class="bg-gradient-to-br from-green-300 to-teal-400 rounded-lg p-8 mb-4 flex items-center justify-center">
+                    <img src="reuinion.png" alt="Réunion" class="w-32 h-32 object-contain">
+                </div>
+                <div class="space-y-2 text-sm">
+                    <!-- Ligne 1 : rejoindre -->
+                    <div class="flex justify-between items-center bg-gray-50 p-2 rounded">
+                        <span class="font-medium text-gray-700">Angular</span>
+                        <span class="text-gray-600">15/12/2025</span>
+                        <a href="videocall.html">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 class="w-6 h-6 text-green-600 cursor-pointer hover:text-green-800 transition"
+                                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7
+                                         -1.274 4.057-5.065 7-9.542 7
+                                         -4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Ligne 2 : verrouillée rouge -->
+                    <div class="flex justify-between items-center bg-gray-50 p-2 rounded">
+                        <span class="font-medium text-gray-700">Spring</span>
+                        <span class="text-gray-600">16/12/2025</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             class="w-6 h-6 text-red-600"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M12 11c1.657 0 3 1.343 3 3v2a3 3 0 01-6 0v-2c0-1.657 1.343-3 3-3z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M8 11V7a4 4 0 118 0v4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Angular - E-Learn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-blue-50">
+ <!-- Header -->
+<header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+            <!-- Logo UX -->
+            <img src="uxLogo.png" alt="UX Logo" class="h-8 w-auto">
+
+            <!-- Bouton retour -->
+            <a href="dashboard.html" class="flex items-center gap-1 text-green-600 hover:text-green-800 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+                <span>Retour</span>
+            </a>
+        </div>
+        
+        <!-- Barre de recherche -->
+        <div class="flex items-center gap-1">
+            <input type="text" placeholder="Recherche..." class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+        </div>
+
+        <div class="flex items-center gap-6">
+            <a href="#" class="text-gray-600 hover:text-purple-600 font-medium">Cours</a>
+            <a href="#" class="text-gray-600 hover:text-purple-600 font-medium">Quiz</a>
+            <a href="#" class="text-gray-600 hover:text-purple-600 font-medium">Forum</a>
+            <a href="#" class="text-gray-600 hover:text-purple-600 font-medium">REUNION</a>
+        </div>
+        
+        <div class="flex items-center gap-4">
+            <button class="px-4 py-2 text-purple-600 border border-purple-600 rounded-lg hover:bg-purple-50 transition">
+                CLASSE
+            </button>
+            <button class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                PROFIL
+            </button>
+            <!-- Logo de profil -->
+            <img src="profile.png" alt="Profil" class="w-10 h-10 rounded-full object-cover">
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 gap-8">
+            <!-- Quiz Form -->
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Quiz Angular</h2>
+                
+                <form class="space-y-6">
+                    <!-- Question 1 -->
+                    <div>
+                        <p class="font-semibold mb-3 text-gray-700">1. Angular est :</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">A - Un framework de programmation</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">B - Un langage de programmation</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">C - Une base de données</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">D - une bibliothèque Javascript</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div>
+                        <p class="font-semibold mb-3 text-gray-700">2. Lequel des éléments suivants n'est PAS un framework Angular :</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">A - AngularJS</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">B - Angular 2</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">C - React</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">D - Angular 4</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div>
+                        <p class="font-semibold mb-3 text-gray-700">3. Le fichier app.module.ts sert à :</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">A - Afficher les modules de l'application</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">B - configurer les routes de l'application</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">C - Créer de nouveaux modules</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded">
+                                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                                <span class="text-gray-700">D - Aucune de ces réponses</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition font-semibold text-lg">
+                        Valider
+                    </button>
+                </form>
+            </div>
+
+            <!-- Result Card -->
+            <div class="flex items-center justify-center">
+                <div class="bg-white rounded-lg shadow-md p-12 text-center w-96">
+                    <h3 class="text-3xl font-bold mb-8 text-gray-800">Bravo</h3>
+                    <div class="mb-8">
+                        <div class="text-7xl font-bold text-purple-600">70<span class="text-4xl text-gray-400">/100</span></div>
+                    </div>
+                    <button class="px-12 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-semibold text-lg">
+                        Suivant
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
