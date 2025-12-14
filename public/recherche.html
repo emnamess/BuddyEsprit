@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions - Recherche une question</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm px-6 py-3">
+        <div class="flex items-center justify-between max-w-7xl mx-auto">
+            <div class="flex items-center space-x-8">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg"></div>
+                </div>
+                  <div class="relative">
+                    <form action="recherche.html" method="GET">
+                        <input type="text" name="q" placeholder="Rechercher" class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 w-64">
+                        <button type="submit" class="absolute left-3 top-3 text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800 flex items-center space-x-2">
+                    <i class="fas fa-home"></i>
+                    <span>Accueil</span>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 flex items-center space-x-2">
+                    <i class="fas fa-box"></i>
+                    <span>Produit</span>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-gray-800 flex items-center space-x-2">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">
+                    Questions
+                </button>
+                <button class="text-purple-600 border border-purple-600 px-4 py-2 rounded-lg hover:bg-purple-50 transition flex items-center space-x-2">
+                    <i class="fas fa-th"></i>
+                    <span>Design System</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-gradient-to-br from-purple-600 to-purple-500 text-white text-center py-20">
+        <h1 class="text-5xl font-bold mb-4">Questions</h1>
+        <p class="text-2xl text-purple-100">Recherche une question</p>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="max-w-7xl mx-auto py-8 px-6">
+        <div class="flex gap-4 mb-8">
+            <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                <span class="text-gray-700">Plus voté</span>
+            </label>
+            <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox" checked class="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500">
+                <span class="text-gray-700">Plus recent</span>
+            </label>
+        </div>
+
+        <!-- Question Cards -->
+        <div class="space-y-6">
+            <!-- Question Card 1 -->
+            <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200 hover:shadow-lg transition">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Question Pertinent</h3>
+                        <p class="text-gray-500 text-sm">Text de la question</p>
+                    </div>
+                    <a href="repondre.html" class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition flex items-center space-x-2">
+                        <i class="fas fa-plus"></i>
+                        <span>Repondre à la question</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Question Card 2 -->
+            <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200 hover:shadow-lg transition">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Question Pertinent</h3>
+                        <p class="text-gray-500 text-sm">Text de la question</p>
+                    </div>
+                    <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition flex items-center space-x-2">
+                        <i class="fas fa-plus"></i>
+                        <span>Repondre à la question</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Question Card 3 -->
+            <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200 hover:shadow-lg transition">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Question Pertinent</h3>
+                        <p class="text-gray-500 text-sm">Text de la question</p>
+                    </div>
+                    <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition flex items-center space-x-2">
+                        <i class="fas fa-plus"></i>
+                        <span>Repondre à la question</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-pencil-ruler text-white"></i>
+                        <span class="text-white font-semibold">Design System</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Un système de design moderne basé et intuitif pour créer des interfaces exceptionnelles.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Pages</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="#" class="hover:text-white transition">Produit</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Design System</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Couleurs</a></li>
+                        <li><a href="#" class="hover:text-white transition">Typographie</a></li>
+                        <li><a href="#" class="hover:text-white transition">Icônes</a></li>
+                        <li><a href="#" class="hover:text-white transition">Boutons</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 flex justify-between items-center text-sm">
+                <p>© 2025 Manuel de Design System. Tous droits réservés.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition">Confidentialité</a>
+                    <a href="#" class="hover:text-white transition">Conditions</a>
+                    <a href="#" class="hover:text-white transition">Licence</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
