@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Q&A - Plateforme Q&A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-graduation-cap text-purple-600 text-2xl"></i>
+                        <span class="ml-2 text-xl font-semibold">Q&A Platform</span>
+                    </div>
+                    <div class="hidden md:flex items-center bg-gray-100 rounded-lg px-4 py-2 w-64">
+                        <i class="fas fa-search text-gray-400"></i>
+                        <input type="text" placeholder="Rechercher..." class="ml-2 bg-transparent outline-none w-full">
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="Dashboard.html" class="text-gray-700 hover:text-purple-600 flex items-center transition">
+                        <i class="fas fa-home mr-1"></i> Accueil
+                    </a>
+                    <a href="Q&APlatform.html" class="text-green-600 hover:text-green-700 flex items-center font-medium">
+                        <i class="fas fa-circle text-xs mr-1 animate-pulse"></i> Live Q&A
+                    </a>
+                    <a href="ProfilUtilisateur.html" class="text-gray-700 hover:text-purple-600 transition">PROFILE</a>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 flex items-center transition">
+                        <i class="fas fa-question-circle mr-2"></i> Questions
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Live Q&A -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-gradient-to-r from-green-600 to-teal-600 text-white p-8 rounded-lg mb-8 shadow-lg">
+            <div class="flex items-center">
+                <i class="fas fa-circle text-sm mr-2 animate-pulse"></i>
+                <h1 class="text-3xl font-bold">Live Q&A</h1>
+            </div>
+            <p class="text-green-100 mt-2">Session en direct - Posez vos questions en temps réel</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Formulaire de question -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Poser une question</h2>
+                <p class="text-gray-600 text-sm mb-4">Posez une question en direct aux étudiants, un résumé sera créé en temps réel</p>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Question</label>
+                        <input type="text" placeholder="Ex. Comment calculer..." class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Tags</label>
+                        <input type="text" placeholder="Ex. économie, mathématiques" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Détails du question</label>
+                        <textarea placeholder="Ajouter des détails supplémentaires..." rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none resize-none transition"></textarea>
+                    </div>
+                    
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 flex items-center justify-center font-medium shadow transition">
+                        <i class="fas fa-plus mr-2"></i> Publier la question
+                    </button>
+                </div>
+
+                <div class="mt-8 border-t pt-6">
+                    <h3 class="font-bold mb-4 text-gray-800 flex items-center">
+                        <i class="fas fa-chart-line mr-2 text-purple-600"></i>
+                        Statistique de direct
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center py-2 px-3 bg-gray-50 rounded-lg">
+                            <span class="text-gray-700 font-medium">Nb de question</span>
+                            <span class="font-bold text-purple-600 text-lg">22</span>
+                        </div>
+                        <div class="border-t pt-3">
+                            <button class="text-purple-600 hover:text-purple-700 text-sm flex items-center justify-between w-full py-2 px-3 hover:bg-purple-50 rounded-lg transition">
+                                <span class="font-medium">Filtre 1</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="border-t pt-3">
+                            <button class="text-purple-600 hover:text-purple-700 text-sm flex items-center justify-between w-full py-2 px-3 hover:bg-purple-50 rounded-lg transition">
+                                <span class="font-medium">Filtre 2 (courses)</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="border-t pt-3">
+                            <button class="text-purple-600 hover:text-purple-700 text-sm flex items-center justify-between w-full py-2 px-3 hover:bg-purple-50 rounded-lg transition">
+                                <span class="font-medium">Filtre 3 (exam)</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questions en direct -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-bold mb-4 flex items-center text-gray-800">
+                    <i class="fas fa-circle text-green-500 text-xs mr-2 animate-pulse"></i>
+                    Questions en direct
+                </h2>
+                
+                <div class="space-y-4">
+                    <!-- Question Live 1 -->
+                    <div class="border-2 border-purple-200 rounded-lg p-4 hover:border-purple-400 transition hover:shadow-md">
+                        <div class="flex items-start mb-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mr-3 shadow">
+                                <i class="fas fa-question text-white text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-semibold text-gray-800">Pierre L.</span>
+                                    <span class="text-gray-400 text-xs ml-2">il y a 3 min</span>
+                                    <span class="ml-auto bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-medium">
+                                        <i class="fas fa-circle text-xs mr-1"></i>Live
+                                    </span>
+                                </div>
+                                <p class="text-gray-700 text-sm leading-relaxed">Est ce que quelqu'un sait la solution de l'examen final de la com ?</p>
+                                <div class="flex items-center mt-3 space-x-4 text-xs text-gray-500">
+                                    <button class="hover:text-purple-600 transition flex items-center">
+                                        <i class="far fa-heart mr-1"></i> Réagir
+                                    </button>
+                                    <button class="hover:text-purple-600 transition flex items-center">
+                                        <i class="far fa-comment mr-1"></i> Répondre
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question Live 2 -->
+                    <div class="border-2 border-blue-200 rounded-lg p-4 hover:border-blue-400 transition hover:shadow-md">
+                        <div class="flex items-start mb-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center flex-shrink-0 mr-3 shadow">
+                                <i class="fas fa-question text-white text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-semibold text-gray-800">Claire R.</span>
+                                    <span class="text-gray-400 text-xs ml-2">il y a 5 min</span>
+                                    <span class="ml-auto bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-medium">
+                                        <i class="fas fa-circle text-xs mr-1"></i>Live
+                                    </span>
+                                </div>
+                                <p class="text-gray-700 text-sm leading-relaxed">Quelle typo?</p>
+                                <div class="flex items-center mt-3 space-x-4 text-xs text-gray-500">
+                                    <button class="hover:text-blue-600 transition flex items-center">
+                                        <i class="far fa-heart mr-1"></i> Réagir
+                                    </button>
+                                    <button class="hover:text-blue-600 transition flex items-center">
+                                        <i class="far fa-comment mr-1"></i> Répondre
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question Live 3 -->
+                    <div class="border-2 border-orange-200 rounded-lg p-4 hover:border-orange-400 transition hover:shadow-md">
+                        <div class="flex items-start mb-3">
+                            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 mr-3 shadow">
+                                <i class="fas fa-question text-white text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center mb-2">
+                                    <span class="font-semibold text-gray-800">Sophie M.</span>
+                                    <span class="text-gray-400 text-xs ml-2">il y a 7 min</span>
+                                    <span class="ml-auto bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full font-medium">
+                                        <i class="fas fa-circle text-xs mr-1"></i>Live
+                                    </span>
+                                </div>
+                                <p class="text-gray-700 text-sm leading-relaxed">Comment faire une bonne présentation PowerPoint ?</p>
+                                <div class="flex items-center mt-3 space-x-4 text-xs text-gray-500">
+                                    <button class="hover:text-orange-600 transition flex items-center">
+                                        <i class="far fa-heart mr-1"></i> Réagir
+                                    </button>
+                                    <button class="hover:text-orange-600 transition flex items-center">
+                                        <i class="far fa-comment mr-1"></i> Répondre
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Indicateur de nouvelles questions -->
+                    <div class="text-center py-3">
+                        <button class="text-green-600 hover:text-green-700 font-medium text-sm flex items-center justify-center mx-auto">
+                            <i class="fas fa-sync-alt mr-2"></i>
+                            Charger les nouvelles questions
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dernières questions -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Dernières questions</h2>
+                
+                <div class="space-y-4">
+                    <!-- Question 1 -->
+                    <div class="border-b pb-4 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">A</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="font-semibold text-gray-800">Alice</span>
+                                    <div class="flex items-center text-xs text-gray-500 space-x-3">
+                                        <span class="flex items-center">
+                                            <i class="far fa-thumbs-up mr-1"></i> 2
+                                        </span>
+                                        <span class="flex items-center">
+                                            <i class="far fa-comment mr-1"></i> 1
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm">Appel 1</p>
+                                <span class="text-xs text-gray-400">il y a 15 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="border-b pb-4 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">B</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="font-semibold text-gray-800">Bob</span>
+                                    <div class="flex items-center text-xs text-gray-500 space-x-3">
+                                        <span class="flex items-center">
+                                            <i class="far fa-thumbs-up mr-1"></i> 0
+                                        </span>
+                                        <span class="flex items-center">
+                                            <i class="far fa-comment mr-1"></i> 0
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm">Appel 2</p>
+                                <span class="text-xs text-gray-400">il y a 20 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="border-b pb-4 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">C</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="font-semibold text-gray-800">Charlie</span>
+                                    <div class="flex items-center text-xs text-gray-500 space-x-3">
+                                        <span class="flex items-center">
+                                            <i class="far fa-thumbs-up mr-1"></i> 1
+                                        </span>
+                                        <span class="flex items-center">
+                                            <i class="far fa-comment mr-1"></i> 0
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm">Appel 3</p>
+                                <span class="text-xs text-gray-400">il y a 25 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="border-b pb-4 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">D</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="font-semibold text-gray-800">David</span>
+                                    <div class="flex items-center text-xs text-gray-500 space-x-3">
+                                        <span class="flex items-center">
+                                            <i class="far fa-thumbs-up mr-1"></i> 5
+                                        </span>
+                                        <span class="flex items-center">
+                                            <i class="far fa-comment mr-1"></i> 3
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm">Question importante</p>
+                                <span class="text-xs text-gray-400">il y a 30 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="pb-4 hover:bg-gray-50 p-2 rounded transition">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">E</div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="font-semibold text-gray-800">Emma</span>
+                                    <div class="flex items-center text-xs text-gray-500 space-x-3">
+                                        <span class="flex items-center">
+                                            <i class="far fa-thumbs-up mr-1"></i> 3
+                                        </span>
+                                        <span class="flex items-center">
+                                            <i class="far fa-comment mr-1"></i> 2
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 text-sm">Besoin d'aide urgente</p>
+                                <span class="text-xs text-gray-400">il y a 35 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="w-full mt-4 text-purple-600 hover:text-purple-700 font-medium text-sm py-2 border border-purple-200 rounded-lg hover:bg-purple-50 transition">
+                    Voir toutes les questions
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Design System</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Un système de design moderne inspiré de Material Design 3 pour créer des interfaces exceptionnelles.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Pages</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="#" class="hover:text-white transition">Produit</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Design System</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Couleurs</a></li>
+                        <li><a href="#" class="hover:text-white transition">Typographie</a></li>
+                        <li><a href="#" class="hover:text-white transition">Icônes</a></li>
+                        <li><a href="#" class="hover:text-white transition">Boutons</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>© 2025 Material Design System. Tous droits réservés.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Confidentialité</a>
+                    <a href="#" class="hover:text-white transition">Conditions</a>
+                    <a href="#" class="hover:text-white transition">Licence</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

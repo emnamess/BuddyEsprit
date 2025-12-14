@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Plateforme Q&A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-8">
+                    <div class="flex items-center">
+                        <i class="fas fa-graduation-cap text-purple-600 text-2xl"></i>
+                        <span class="ml-2 text-xl font-semibold">Q&A Platform</span>
+                    </div>
+                    <div class="hidden md:flex items-center bg-gray-100 rounded-lg px-4 py-2 w-64">
+                        <i class="fas fa-search text-gray-400"></i>
+                        <input type="text" placeholder="Rechercher..." class="ml-2 bg-transparent outline-none w-full">
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="" class="text-gray-700 hover:text-purple-600 flex items-center">
+                        <i class="fas fa-home mr-1"></i> Accueil
+                    </a>
+                    <a href="Q&APlatform.html" class="text-green-600 hover:text-green-700 flex items-center font-medium">
+                        <i class="fas fa-circle text-xs mr-1"></i> Live Q&A
+                    </a>
+                    <a href="ProfilUtilisateur.html" class="text-gray-700 hover:text-purple-600">PROFILE</a>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 flex items-center">
+                        <i class="fas fa-question-circle mr-2"></i> Questions
+                    </button>
+                 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page principale - Dashboard -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 rounded-lg mb-8 shadow-lg">
+            <h1 class="text-3xl font-bold mb-2">Dashboard</h1>
+            <p class="text-purple-100">Bienvenue sur votre plateforme de questions réponses</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Catégories -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Catégories</h2>
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-center py-2 hover:bg-gray-50 px-2 rounded cursor-pointer transition">
+                        <span class="text-gray-700">Mobilité</span>
+                        <span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-sm font-medium">18</span>
+                    </li>
+                    <li class="flex justify-between items-center py-2 hover:bg-gray-50 px-2 rounded cursor-pointer transition">
+                        <span class="text-gray-700">Visa & Immigration</span>
+                        <span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-sm font-medium">14</span>
+                    </li>
+                    <li class="flex justify-between items-center py-2 hover:bg-gray-50 px-2 rounded cursor-pointer transition">
+                        <span class="text-gray-700">Études</span>
+                        <span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-sm font-medium">21</span>
+                    </li>
+                    <li class="flex justify-between items-center py-2 hover:bg-gray-50 px-2 rounded cursor-pointer transition">
+                        <span class="text-gray-700">Logement</span>
+                        <span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-sm font-medium">16</span>
+                    </li>
+                    <li class="flex justify-between items-center py-2 hover:bg-gray-50 px-2 rounded cursor-pointer transition">
+                        <span class="text-gray-700">Emploi</span>
+                        <span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-sm font-medium">7</span>
+                    </li>
+                    <li class="flex justify-between items-center py-2 hover:bg-gray-50 px-2 rounded cursor-pointer transition">
+                        <span class="text-gray-700">Santé</span>
+                        <span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-sm font-medium">12</span>
+                    </li>
+                </ul>
+                <button class="w-full mt-4 bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 flex items-center justify-center font-medium shadow transition">
+                    <i class="fas fa-plus mr-2"></i> Post une question
+                </button>
+            </div>
+
+            <!-- Questions récentes -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Recent Questions</h2>
+                <div class="space-y-4">
+                    <!-- Question 1 -->
+                    <div class="border-b pb-4">
+                        <div class="flex items-start mb-2">
+                            <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">T</div>
+                            <div class="flex-1">
+                                <div class="flex items-center mb-1">
+                                    <span class="font-semibold text-gray-800">Tata L.</span>
+                                    <span class="text-gray-400 text-xs ml-2">il y a 4 h</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-2">Puis-je vous ajouter pour qu'on étudie pour la France ?</p>
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">france</span>
+                                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">études</span>
+                                </div>
+                                <div class="flex items-center space-x-4 text-gray-500 text-sm">
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-thumbs-up mr-1"></i> 12
+                                    </span>
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-eye mr-1"></i> 23
+                                    </span>
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-comment mr-1"></i> 5
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="bg-green-500 text-white px-4 py-1 rounded text-sm hover:bg-green-600 transition">Répondre</button>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="border-b pb-4">
+                        <div class="flex items-start mb-2">
+                            <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">M</div>
+                            <div class="flex-1">
+                                <div class="flex items-center mb-1">
+                                    <span class="font-semibold text-gray-800">Marie B.</span>
+                                    <span class="text-gray-400 text-xs ml-2">il y a 4 h</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-2">Meilleurs quartiers pour étudier à Paris ?</p>
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">paris</span>
+                                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">logement</span>
+                                </div>
+                                <div class="flex items-center space-x-4 text-gray-500 text-sm">
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-thumbs-up mr-1"></i> 8
+                                    </span>
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-eye mr-1"></i> 23
+                                    </span>
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-comment mr-1"></i> 8
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="bg-green-500 text-white px-4 py-1 rounded text-sm hover:bg-green-600 transition">Répondre</button>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="border-b pb-4">
+                        <div class="flex items-start mb-2">
+                            <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">S</div>
+                            <div class="flex-1">
+                                <div class="flex items-center mb-1">
+                                    <span class="font-semibold text-gray-800">Sophie M.</span>
+                                    <span class="text-gray-400 text-xs ml-2">il y a 6 h</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-2">Assistance santé obligatoire pour les étud...</p>
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">santé</span>
+                                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">assurance</span>
+                                </div>
+                                <div class="flex items-center space-x-4 text-gray-500 text-sm">
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-thumbs-up mr-1"></i> 5
+                                    </span>
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-eye mr-1"></i> 18
+                                    </span>
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-comment mr-1"></i> 3
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="bg-green-500 text-white px-4 py-1 rounded text-sm hover:bg-green-600 transition">Répondre</button>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="pb-4">
+                        <div class="flex items-start mb-2">
+                            <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-3 flex-shrink-0">L</div>
+                            <div class="flex-1">
+                                <div class="flex items-center mb-1">
+                                    <span class="font-semibold text-gray-800">Louis R.</span>
+                                    <span class="text-gray-400 text-xs ml-2">il y a 8 h</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-2">Transfert pendant vos études - combien d'heures autorisés ?</p>
+                                <div class="flex items-center space-x-2 mb-2">
+                                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">emploi</span>
+                                    <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded">visa</span>
+                                </div>
+                                <div class="flex items-center space-x-4 text-gray-500 text-sm">
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-thumbs-up mr-1"></i> 15
+                                    </span>
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-eye mr-1"></i> 5
+                                    </span>
+                                    <span class="flex items-center hover:text-purple-600 cursor-pointer">
+                                        <i class="far fa-comment mr-1"></i> 6
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="bg-green-500 text-white px-4 py-1 rounded text-sm hover:bg-green-600 transition">Répondre</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Members & Activity -->
+            <div class="space-y-6">
+                <!-- Top Members -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-bold mb-4 text-gray-800">Top Members</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-between py-2 hover:bg-gray-50 px-2 rounded transition cursor-pointer">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold mr-3">T</div>
+                                <span class="text-gray-700 font-medium">Taïa Louane</span>
+                            </div>
+                            <i class="fas fa-trophy text-green-500"></i>
+                        </li>
+                        <li class="flex items-center justify-between py-2 hover:bg-gray-50 px-2 rounded transition cursor-pointer">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold mr-3">J</div>
+                                <span class="text-gray-700 font-medium">Jacob Johnson</span>
+                            </div>
+                            <i class="fas fa-trophy text-green-500"></i>
+                        </li>
+                        <li class="flex items-center justify-between py-2 hover:bg-gray-50 px-2 rounded transition cursor-pointer">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold mr-3">M</div>
+                                <span class="text-gray-700 font-medium">Mohamed Al</span>
+                            </div>
+                            <i class="fas fa-trophy text-green-500"></i>
+                        </li>
+                        <li class="flex items-center justify-between py-2 hover:bg-gray-50 px-2 rounded transition cursor-pointer">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold mr-3">C</div>
+                                <span class="text-gray-700 font-medium">Clara Dubois</span>
+                            </div>
+                        </li>
+                        <li class="flex items-center justify-between py-2 hover:bg-gray-50 px-2 rounded transition cursor-pointer">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold mr-3">P</div>
+                                <span class="text-gray-700 font-medium">Pierre Leroy</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Activity -->
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-bold mb-4 text-gray-800">Activity</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-start py-2">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white mr-3 flex-shrink-0">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 text-sm"><span class="font-semibold">Sophie M.</span> a répondu à une question</p>
+                                <span class="text-gray-400 text-xs">il y a 2h</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start py-2">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white mr-3 flex-shrink-0">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 text-sm"><span class="font-semibold">Marie L.</span> a marqué une question comme résolue</p>
+                                <span class="text-gray-400 text-xs">il y a 3h</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start py-2">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white mr-3 flex-shrink-0">
+                                <i class="fas fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 text-sm"><span class="font-semibold">Annette L.</span> a posté une réponse</p>
+                                <span class="text-gray-400 text-xs">il y a 5h</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Design System</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Un système de design moderne inspiré de Material Design 3 pour créer des interfaces exceptionnelles.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Pages</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Accueil</a></li>
+                        <li><a href="#" class="hover:text-white transition">Produit</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Design System</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Couleurs</a></li>
+                        <li><a href="#" class="hover:text-white transition">Typographie</a></li>
+                        <li><a href="#" class="hover:text-white transition">Icônes</a></li>
+                        <li><a href="#" class="hover:text-white transition">Boutons</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Suivez-nous</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>© 2025 Material Design System. Tous droits réservés.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Confidentialité</a>
+                    <a href="#" class="hover:text-white transition">Conditions</a>
+                    <a href="#" class="hover:text-white transition">Licence</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
